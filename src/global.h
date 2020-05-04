@@ -1,8 +1,6 @@
-#ifndef ALGORITMOS_H_
-#define ALGORITMOS_H_
+#ifndef GLOBAL_H_
+#define GLOBAL_H_
 
-
-#include <math.h>
 
 /* Constantes  */
 
@@ -11,8 +9,4 @@ const int PERIODO_DE_DEPOSITO = 30 * 12;
 const int NUMERO_DE_PADRON = 103783;
 const float CANTIDAD_DEPOSITADA = NUMERO_DE_PADRON/((float)700);
 
-/* Algorimtos  */
-float algoritmo1(float Xk);
-
-
-#endif /* ALGORITMOS_H_  */
+#endif /* GLOBAL_H_ */
