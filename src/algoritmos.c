@@ -13,3 +13,8 @@ float algoritmo2(float Xk){
 	float radicando = MONTO_DESEADO * (Xk / CANTIDAD_DEPOSITADA) + 1;
 	return powf(radicando, 1.0 / PERIODO_DE_DEPOSITO) - 1;
 }
+
+float algoritmo3(float Xk){
+
+	return (CANTIDAD_DEPOSITADA / MONTO_DESEADO) * (powf(1 + Xk, PERIODO_DE_DEPOSITO) - 1);
+}
