@@ -18,8 +18,12 @@ int main(){
 	/*0.000055336271517362878588456449175912702535498451360205220...*/
 
 	float resultado4 = algoritmo4(0.0002);
-	printf("algoritmo3: %0.7f\n",resultado4);
+	printf("algoritmo4: %0.7f\n",resultado4);
 	/*0.00112764...*/
+	
+	float resultado5 = algoritmo5(0.0002);
+	printf("algoritmo5: %0.7f\n",resultado5);
+	/**/
 	
 
 	return 0;

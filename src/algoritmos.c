@@ -25,3 +25,16 @@ float algoritmo4(float Xk){
 	float divisor = powf(1 + Xk, PERIODO_DE_DEPOSITO / 2);
 	return powf(dividendo/divisor, 1.0 / (PERIODO_DE_DEPOSITO / 2)) - 1;
 }
+
+float algoritmo5(float Xk){
+
+
+	float dividendo = ((CANTIDAD_DEPOSITADA / Xk) * (powf(1 + Xk, PERIODO_DE_DEPOSITO) - 1)) - MONTO_DESEADO;
+	float divisor1 = (((-1 * CANTIDAD_DEPOSITADA) / powf(Xk, 2)) * (powf(1 + Xk, PERIODO_DE_DEPOSITO) - 1)); 
+	float divisor2 = ((CANTIDAD_DEPOSITADA / Xk) * PERIODO_DE_DEPOSITO * (powf(1 + Xk, PERIODO_DE_DEPOSITO - 1))); 
+	
+
+	float cociente = dividendo / (divisor1 + divisor2);
+
+	return Xk - cociente;
+}
