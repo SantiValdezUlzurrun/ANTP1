@@ -6,6 +6,6 @@
 
 /* Algorimtos  */
 float algoritmo1(float Xk);
-
+float algoritmo2(float Xk);
 
 #endif /* ALGORITMOS_H_ */

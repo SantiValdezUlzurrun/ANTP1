@@ -1,4 +1,4 @@
-TARGET = algoritmo1
+TARGET = algoritmos
 CC = gcc
 CFLAGS = -g -Wall -Werror -pedantic
 
