@@ -26,23 +26,23 @@ int main(){
 //	printf("algoritmo5: %0.7f\n",resultado5);
 	/**/
 
-	float semilla = regula_falsi(0.001, 0.010, 0.001, funcion);	
+	float semilla = regula_falsi(0.001, 0.009, 0.001, funcion);	
 	//printf("Semilla: %0.7f\n\n", semilla);
 
 	printf(".:: ALGORITMOS PUNTO FIJO CON SEMILLA=%0.7f ::.\n\n", semilla);
-	float resultado1 = punto_fijo(semilla, 0.0000001, algoritmo1);
+	float resultado1 = punto_fijo(semilla, 0.000005, algoritmo1);
 	printf("Algoritmo1: %f\n\n", resultado1);
 
-	float resultado2 = punto_fijo(semilla, 0.0000001, algoritmo2);
+	float resultado2 = punto_fijo(semilla, 0.000005, algoritmo2);
 	printf("Algoritmo2: %0.7f\n\n", resultado2);
 
-	float resultado3 = punto_fijo(semilla, 0.0000001, algoritmo3);
+	float resultado3 = punto_fijo(semilla, 0.000005, algoritmo3);
 	printf("Algoritmo3: %0.7f\n\n", resultado3);
 
-	float resultado4 = punto_fijo(semilla, 0.0000001, algoritmo4);
+	float resultado4 = punto_fijo(semilla, 0.000005, algoritmo4);
 	printf("Algoritmo4: %0.7f\n\n", resultado4);
 
-	float resultado5 = punto_fijo(semilla, 0.0000001, algoritmo5);
+	float resultado5 = punto_fijo(semilla, 0.000005, algoritmo5);
 	printf("Algoritmo5: %0.7f\n\n", resultado5);
 
 	return 0;
