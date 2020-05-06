@@ -1,11 +1,16 @@
 #include "algoritmos.h"
 #include "global.h"
 
+float funcion(float Xo){
+	
+	return (CANTIDAD_DEPOSITADA/Xo) * (powf(1+Xo, PERIODO_DE_DEPOSITO) - 1) - MONTO_DESEADO;
+}
+
 /* Algoritmo iterativo 1  */
 float algoritmo1(float Xk){
 
-	float montoDeLaCuenta = (CANTIDAD_DEPOSITADA / Xk) * (powf(1 + Xk, PERIODO_DE_DEPOSITO) - 1);
-	return  Xk - (montoDeLaCuenta - MONTO_DESEADO);
+	float monto_de_la_cuenta = (CANTIDAD_DEPOSITADA / Xk) * (powf(1 + Xk, PERIODO_DE_DEPOSITO) - 1);
+	return  Xk - (monto_de_la_cuenta - MONTO_DESEADO);
 }
 
 float algoritmo2(float Xk){

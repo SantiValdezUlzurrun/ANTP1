@@ -4,6 +4,8 @@
 
 #include <math.h>
 
+float funcion(float Xo);
+
 /* Algorimtos  */
 float algoritmo1(float Xk);
 float algoritmo2(float Xk);
